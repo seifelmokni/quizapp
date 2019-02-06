@@ -1,0 +1,141 @@
+//Mobile first
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    width: 100%;
+}
+
+.center-vertically {
+    @include transform(0, -50%);
+    top: 50%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+small,
+a,
+label,
+.paragraph,
+.btn {
+    &.white {
+        color: color(white);
+    }
+
+    &.grey {
+        color: color(grey);
+    }
+
+    &.medium {
+        font-weight: 500;
+    }
+
+    &.bold {
+        font-weight: 700;
+    }
+
+    &.underline {
+        text-decoration: underline;
+    }
+
+    &.border-bottom {
+        border-bottom-width: 1px;
+
+        &.white {
+            border-bottom-color: color(white);
+        }
+
+        &.solid {
+            border-bottom-style: solid;
+        }
+    }
+
+    &.inline {
+        display: inline;
+    }
+}
+
+h1,
+.h1 {
+    @include font-style($dosis, 90px, 700, 90px);
+
+    &.x2 {
+        font-size: calculateRem(180px);
+    }
+}
+
+h2,
+.h2 {
+    @include font-style($dosis, 60px, 700, 60px);
+}
+
+h3,
+.h3 {
+    @include font-style($dosis, 27px, 700, 33px);
+}
+
+h4,
+.h4 {
+    @include font-style($dosis, 27px, 700, 30px);
+}
+
+h5,
+.h5 {
+    @include font-style($dosis, 21px, 700, 27px);
+}
+
+h6,
+.h6 {
+    @include font-style($dosis, 27px, 500, 30px);
+}
+
+p,
+a,
+.paragraph {
+    @include font-style($dosis, 18px, 700, 21px);
+}
+
+/* p {
+    @include font-style($dosis, 16px, 500, 21px);
+}
+
+p {
+    @include font-style($dosis, 14px, 700, 21px);
+}
+
+p {
+    @include font-style($dosis, 14px, 500, 21px);
+} */
+
+small,
+.small {
+    @include font-style($dosis, 15px, 500, 18px);
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+// 568+
+@media only screen and (min-width: 568 / 16 * 1em) {}
+
+// 768+
+@media only screen and (min-width: 768 / 16 * 1em) {}
+
+// 1024+
+@media only screen and (min-width: 1024 / 16 * 1em) {}

@@ -1,0 +1,20 @@
+// Mobile first
+.legal {
+    padding: 15px 0 0;
+    text-align: center;
+
+    small,
+    p,
+    a {
+        color: color(white);
+    }
+
+    a {
+        @include font-style($dosis, 16px, 500, 18px);
+        //text-decoration: underline;
+
+        &.p {
+            font-weight: 700;
+        }
+    }
+}

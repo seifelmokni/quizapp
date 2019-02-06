@@ -1,0 +1,17 @@
+// Mobile first
+.show-time {
+  .content {
+    padding-top: 125px;
+    text-align: center;
+  }
+
+  .heading {
+    padding-bottom: 70px;
+    margin: 0 auto;
+    width: cp(200, 335);
+  }
+
+  .btn {
+    margin-bottom: 80px;
+  }
+}

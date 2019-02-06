@@ -1,0 +1,42 @@
+// Mobile first
+.help-video {
+  .head {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    .navigation {
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+    }
+
+    .item {
+      margin: 0;
+      position: static;
+    }
+    .bottom {
+      background-color: #FFFFFF;
+    }
+  }
+
+  .stream-video {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .bottom {
+    padding-top: 20px;
+    text-align: center;
+
+    .btn {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+    
+    p {
+      padding-top: 20px;
+    }
+  }
+}

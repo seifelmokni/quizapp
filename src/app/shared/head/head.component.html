@@ -1,0 +1,36 @@
+<div class="head">
+  <div class="navigation">
+
+    <div class="item go-back-item">
+      <a *ngIf="goback" class="goBack" (click)="goBack($event)">
+        <img src="assets/images/arrow.png" alt="arrow">
+      </a>
+    </div>
+
+    <div *ngIf="logoClasses" class="item logo" [ngClass]="logoClasses">
+      <img src="assets/images/logo/qv-medium-blue.png" alt="quizvideo">
+    </div>
+
+    <div *ngFor="let title of titles" class="item">
+      <h1 *ngIf="title.type === 'text'" [ngClass]="title.classes">{{ title.text }}</h1>
+      <div *ngIf="title.type === 'logo'" [ngClass]="title.classes"><img src="assets/images/logo/qv-medium-blue.png" alt="{{ title.text }}"></div>
+    </div>
+
+    <div *ngIf="help" class="item help">
+        <a class="goHelp" (click)="goHelp($event)">
+          <img class="btn circle" src="assets/images/help-icon.png" alt="help">
+        </a>
+    </div>
+
+  </div>
+
+  <div class="subtitles" *ngIf="subtitles">
+    <h2 *ngFor="let subtitle of subtitles" [ngClass]="subtitle.classes">{{ subtitle.text }}</h2>
+  </div>
+
+  <app-socials *ngIf="socials" [socialMedia]="socials"></app-socials>
+
+  <div class="message" *ngIf="messages">
+    <p *ngFor="let message of messages" [ngClass]="message.classes">{{ message.text }}</p>
+  </div>
+</div>

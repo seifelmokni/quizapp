@@ -1,0 +1,25 @@
+.tagline {
+    text-align: center;
+
+    .btn.number {
+        display: block;
+        font-size: calculateRem(30px);
+        margin: 0 auto;
+    }
+    .tagline-image {
+        margin: 10px 0;
+    }
+    .link {
+        padding-bottom: 15px;
+    }
+
+    h3 {
+        padding: 15px 50px 25px;
+    }
+
+    a {
+        text-decoration: underline;
+        color: color(white);
+        padding:5px;
+    }
+}

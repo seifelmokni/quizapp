@@ -1,0 +1,218 @@
+.game-results {
+  position: relative;
+  padding: 60px 0px 10px 0 !important;
+  background-color: #177967;
+
+  .head {
+    padding-top: 10px;
+    box-shadow: 0 0 30px -7px rgba(0,0,0,.75);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background: #ef4d2a;
+  }
+ 
+  .profile {
+    padding: 20px 15px 25px;
+  }
+  
+  .profile-image {
+    background: color(darkgrey);
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 90px;
+    width: 90px;
+    @include box-shadow(0, 7px, 14px, -5px, color(black), 0.75);
+
+    img {
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+
+  .profile-name {
+    padding-top: 10px;
+    text-align: center;
+
+    h5,
+    .h5 {
+      word-wrap: break-word;
+    }
+  }
+
+  .score {
+    padding-top: 20px;
+  }
+  .score:first-child {
+    width: 27%;
+  }
+
+  .score-star {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 45px;
+  }
+
+  .flex {
+    @include flexbox(row nowrap, space-between, flex-start);
+    padding-bottom: 25px;
+
+    &:last-child,
+    &.last {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &.children-in-the-middle {
+      align-items: center;
+      -webkit-align-items: center;
+    }
+
+    .flex-item {
+      text-align: center;
+      width: 50%;
+    }
+
+    .flex-item-title {
+      padding-bottom: 15px;
+    }
+  }
+
+  .score-title {
+    display: block;
+    padding-bottom: 15px;
+  }
+
+  .go-to {
+    text-align: center;
+    padding: 30px 40px 25px;
+
+    .btn {
+      display: block;
+    }
+
+    .paragraph {
+      display: block;
+      padding-top: 20px;
+    }
+  }
+  .winner-list {
+    padding-top: 20px;
+    background-color: #FFFFFF;
+    h4 {
+      margin-bottom: 20px;
+    }
+    .show-of-or-invite {
+      width: 100%;
+      bottom: 0px;
+      position: absolute;
+      text-align: center;
+      .btn {
+        width: 100%;
+
+      }
+    }
+  }
+  .carousel {
+    margin: 20px;
+    .slick-track {
+      margin-left:auto; // https://stackoverflow.com/questions/33130035/how-can-i-center-items-in-slick-carousel
+      margin-right:auto;
+    }
+    .slick-list {
+      z-index: -1;
+    }
+    .slide {
+      text-align: center;
+      img {
+        width: 50%;
+        margin: 0 auto;
+        border-radius:50%;
+        @include box-shadow(0, 7px, 14px, -5px, color(black), 0.75);
+      }
+    }
+    .slick-prev {
+      left: -10px;
+      height: 22px;
+      width: 13px;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      margin-top: -20px;
+      background: url('../assets/images/icons/arrow-carousel.png') no-repeat 0 0;
+      background-size: cover;
+      &:before {
+        content: '';
+      }
+    }
+    .slick-next {
+      right: -10px;
+      margin-top: -5px;
+      height: 22px;
+      width: 13px;
+      background: url('../assets/images/icons/arrow-carousel.png') no-repeat 0 0;
+      background-size: cover;
+      &:before {
+        content: '';
+      }
+    }
+  }
+}
+
+// TODO Move that to a custom component
+
+.table {
+  display: table;
+  padding-bottom: 50px;
+  width: 100%;
+  .table-row {
+    display: table-row-group;
+    width: 100%;
+    
+    padding: 5px;
+    margin: 5px;
+    list-style: none;   
+  }
+  .table-cell {
+    border-top: 1px solid #cccccc;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 0;
+    &.table-pos {
+      width: 10%;
+      text-align: center;
+    }
+    &.table-image {
+      width: 10%;
+      text-align: left;
+      img {
+        max-width: 70%;
+        margin: 0 auto;
+        border-radius:50%;
+        @include box-shadow(0, 7px, 14px, -5px, color(black), 0.75);
+      }
+    }
+    &.table-name {
+      width: 55%;
+      text-align: left;
+    }
+    &.table-score {
+      width: 13%;
+      vertical-align: middle;
+      font-weight: bold;
+      text-align: right;
+    }
+    &.table-star {
+      width: 10%;
+      padding: 5px;
+      text-align: left;
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+}

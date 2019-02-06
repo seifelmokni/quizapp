@@ -1,0 +1,30 @@
+<div class="base-component no-padding-top no-padding-left-and-right no-padding-bottom profile-internal balance">
+  <app-floating-bg [animated]="true" [image]="image"></app-floating-bg>
+  <app-head [goback]="true" [titles]="titles" [messages]="messages"></app-head>
+  <div class="top">
+    <h2 class="value white">{{ balance | number : '1.2' }} €</h2>
+  </div>
+
+  <div *ngIf="canCashout" class="content balance center">
+    <h4>¿Quieres cobrarlas?</h4>
+    <div *ngIf="!paymentDone">
+    <h5 class="medium">Descarga o abre Verse usando el botón en esta pantalla. Automáticamente recibiremos tu solicitud, haremos unas comprobaciones
+      y... TACHÁN, el dinero estará en tu cuenta.</h5>
+    <a (click)="sendToken($event)" (click)="openLink('in')" 
+      class="btn l rounded cyan" target="_blank">Cobrar con Verse.me</a>
+    </div>
+
+    <div *ngIf="paymentDone">
+    <h5 class="medium">su pago ha sido realizado, visite verse.me para ver su cuenta</h5>
+    <a (click)="openLink('https://verse.me/es/')" 
+      class="btn l rounded cyan" target="_blank">Visita www.quizvideo.com</a>
+    </div>
+
+
+
+    <div class="info center">
+      <p class="small medium">¿No sabes como funciona?</p>
+      <p class="small underline bold"><a (click)="openLink('https://verse.me/es/')" title="Enlace a página de verse">Más información aquí</a></p>
+    </div>
+  </div>
+</div>

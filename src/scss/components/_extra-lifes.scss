@@ -1,0 +1,18 @@
+// Mobile first
+.extra-lifes {
+  .content {
+    background-color: #FFFFFF;
+  }
+  .social {
+    background-color: #FFFFFF;
+    @include flexbox(row nowrap, space-between, flex-start);
+    padding: 0 40px;
+    list-style-type: none;
+    
+    img {
+      &.facebook {
+        width: 15px;
+      }
+    }
+  }
+}

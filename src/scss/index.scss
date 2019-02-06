@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800');
+
+@import 'abstracts/variables', //variables
+        'abstracts/functions', //functions
+        'abstracts/mixins', //mixins
+        'abstracts/placeholders'; //mixins
+
+@import 'base/base', //Base
+        'base/reset';
+
+@import 'components/fonts',
+        'components/animations',
+        'components/heart',
+        'components/app-root',
+        'components/floating-bg',
+        'components/head',
+        'components/navbar',
+        'components/tagline',
+        'components/legal',
+        'components/home',
+        'components/register',
+        'components/login',
+        'components/stream-video',
+        'components/help-center',
+        'components/help-video',
+        'components/profile',
+        'components/user-info',
+        'components/user-results',
+        'components/game-results',
+        'components/extra-lifes',
+        'components/show-time',
+        'components/flash-messages',
+        'components/quiz',
+        'components/quiz-head',
+        'components/question',
+        'components/answers',
+        'components/final-screen',
+        'components/loader',
+        'components/balance',
+        'components/profile-internal',
+        'components/logo',
+        'components/life-circle',
+        'components/not-found',
+        'components/base-component',
+        'components/btn',
+        'components/classes'; 
+
+@import 'layout/header', // Layout
+        'layout/navigation',
+        'layout/main',
+        'layout/forms',
+        'layout/footer';
+
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';

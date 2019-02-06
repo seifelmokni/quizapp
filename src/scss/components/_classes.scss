@@ -1,0 +1,73 @@
+.fa-star {
+  color: #F59F34;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.centered {
+  text-align: center;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.normal {
+  font-weight: normal;
+  line-height: 1.2em;
+}
+
+.gray {
+  color: gray;
+}
+
+.white {
+  color: white;
+  a:link,
+  a:visited,
+  a:hover {
+    color: white
+  }
+}
+.ace_dd {
+  border: none;
+  margin-top: -43px;
+  background-color: #b6bc0a !important;
+  border-radius: 30px;
+  a:link,
+  a:visited {
+    color: #FFFFFF !important;
+    border-radius: 30px;
+  }
+  a:hover {
+    color: #b6bc0a !important;
+    border-radius: 30px;
+  }
+}
+
+/* Fixes the autocomplete field color on Chrome */
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: none !important;
+  border: 1px solid transparent;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+

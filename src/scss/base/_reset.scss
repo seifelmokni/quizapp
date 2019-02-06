@@ -1,0 +1,136 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+menu,
+summary,
+main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    @include font-style($dosis, 18px, 400, 21px);
+    color: color(textcolor);
+}
+
+nav ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: color(textcolor);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+input,
+select,
+textarea,
+button {
+    border: 0;
+    background: none;
+    padding: 0;
+    margin: 0;
+    &:focus {
+        outline: 0;
+    }
+}
+
+address {
+    font-style: normal;
+}
+
+main {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}

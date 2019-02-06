@@ -1,0 +1,42 @@
+<div class="base-component help-center-main">
+    <app-floating-bg [animated]="false" [image]="backgroundImageUrl"></app-floating-bg>
+    <app-head [goback]="true" [logoClasses]="logoClasses"></app-head>
+    
+    <div class="main-content center">
+      <ul class="help-buttons">
+        <li><a routerLink="/como-jugar" class="padding bold white medium">Cómo jugar</a></li>
+        <li><a routerLink="/faq" class="padding bold white medium">FAQ</a></li>
+        <li><a routerLink="/ayuda" class="padding bold white medium">Ayuda</a></li>
+        <li><a routerLink="/como-cobro" class="padding bold white medium">¿Cómo cobro el dinero ganado?</a></li>
+      </ul>
+      <p class="white">Síguenos:</p>
+      <ul class="social">
+        <li>
+          <a class="m facebook" onclick="cordova.InAppBrowser.open('https://www.facebook.com/quizvideo', '_system');return false;">
+            <span>
+              <img class="facebook" width="50px" src="assets/images/social/fb.png" alt="Facebook">
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="m twitter" onclick="cordova.InAppBrowser.open('https://twitter.com/quizvideotrivia', '_system');return false;">
+            <span>
+              <img class="twitter" width="50px" src="assets/images/social/tw.png" alt="Twitter">
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="m instagram" onclick="cordova.InAppBrowser.open('https://www.instagram.com/quizvideo/', '_system');return false;">
+            <span>
+              <img class="instagram" width="50px" src="assets/images/social/in.png" alt="Instagram">
+            </span>
+          </a>
+        </li>
+      </ul>
+      <ul class="info-buttons">
+        <li><a routerLink="/terminos-y-condiciones" class="white">Términos</a></li>
+        <li><a routerLink="/politica-de-privacidad" class="white">Privacidad</a></li>
+        <li><a routerLink="/reglas-oficiales" class="white">Reglas</a></li>
+      </ul>
+   </div>
+</div>

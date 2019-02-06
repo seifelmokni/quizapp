@@ -1,0 +1,42 @@
+<div class="base-component final-screen">
+  <!--<app-floating-bg [animated]="true" [image]="backgroundImage"></app-floating-bg>-->
+  <app-head [goback]="false" [titles]="titles"></app-head>
+
+  <div class="your-score">
+    <h5 class="white">Has conseguido</h5>
+
+    <div class="star">
+      <i class="fas fa-star"></i>
+    </div>
+
+    <div class="score">
+      <h3 class="white">{{ score }}</h3>
+    </div>
+
+    <div class="status">
+      <h2 class="isWinner-message white">{{ isWinner ? '¡Bravo!' : '¡Vaya!' }}</h2>
+      <h5 class="white">{{ isWinner ? '¡Has ganado!' : 'No has ganado' }}</h5>
+      
+      <div *ngIf="quiz.prizeAmount && isWinner" class="h1 white money">
+        {{ money | number : '1.2' }} € 
+      </div>
+    </div>
+
+    <div class="go-to-leaderboard">
+      <div class="message">
+        <p class="small white">{{ message }}</p>
+      </div>
+
+      <div class="show-of-or-invite">
+        <a routerLink="/profile/invite" class="btn rounded cyan l white-txt">
+          {{ isWinner ? 'Consigue vidas' : 'Invita a tus amigos' }}
+        </a>
+      </div>
+
+      <div class="results">
+        <a routerLink="/game-results" class="btn rounded l white-txt border solid white-border">Ver resultados</a>
+      </div>
+    </div>
+  </div>
+
+</div>

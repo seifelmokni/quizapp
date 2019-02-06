@@ -1,0 +1,76 @@
+// Mobile first
+
+
+.question {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: cp(340, 375);
+  z-index: 1;
+
+  .question-body {
+    background: #fff;
+    padding: 20px 25px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .question-count-down {
+    text-align: center;
+    /*margin-top: 50px;*/
+  }
+
+  .use-life {
+    background: color(white);
+    padding: 15px 0 25px;
+    text-align: center;
+
+    .use-life-text {
+      padding-bottom: 15px;
+    }
+
+    .btn {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 0;
+      width: auto;
+    }
+  }
+}
+
+.question-report {
+  padding: 29px 0;
+  text-align: center;
+  padding-left: 29px;
+  &.correct {
+    background: color(lightgreen);
+  }
+
+  &.wrong {
+    background: color(coral);
+  }
+}
+
+.stars {
+  @include flexbox(row wrap, center, center);
+  padding: 10px 0 20px;
+  margin: 0 auto;
+  //width: cp(100, 290);
+
+  .star {
+    display: block;
+    margin-left: 10px;
+    max-width: 25px;
+    min-height: 28px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .make-grey {
+    background: color(grey);
+  }
+}

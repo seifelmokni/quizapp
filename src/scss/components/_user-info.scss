@@ -1,0 +1,92 @@
+.user-info {
+  background: color(white);
+  position: relative;
+  margin-top: 25px;
+
+  .profile {
+    background: #F3F7F8;
+    padding: 20px 15px 25px;
+  }
+  
+  .profile-image {
+    //background: #F3F7F8;
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 90px;
+    width: 90px;
+
+    img {
+      @include box-shadow(0, 0, 30px, -7px, color(black), 0.75);
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+
+  .profile-name {
+    padding-top: 10px;
+    text-align: center;
+
+    h5,
+    .h5 {
+      word-wrap: break-word;
+    }
+  }
+
+  .score {
+    padding-top: 20px;
+  }
+  .fa-star {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  .score-star {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 45px;
+  }
+
+  .flex {
+    @include flexbox(row nowrap, space-between, flex-start);
+    padding-bottom: 25px;
+
+    &:last-child,
+    &.last {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &.children-in-the-middle {
+      align-items: center;
+      -webkit-align-items: center;
+    }
+
+    .flex-item {
+      text-align: center;
+      width: 50%;
+    }
+
+    .flex-item-title {
+      padding-bottom: 15px;
+    }
+  }
+
+  .score-title {
+    display: block;
+    padding-bottom: 15px;
+  }
+
+  .go-to {
+    text-align: center;
+    padding: 30px 40px 25px;
+
+    .btn {
+      display: block;
+    }
+
+    .paragraph {
+      display: block;
+      padding-top: 20px;
+    }
+  }
+}

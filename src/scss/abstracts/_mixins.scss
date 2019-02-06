@@ -1,0 +1,156 @@
+// SASS MIXINS
+@mixin flexbox($flexflow: false, $justifycontent: false, $alignitems: false) {
+    @if $alignitems { 
+        align-items: $alignitems; 
+        -webkit-align-items: $alignitems; 
+    }
+
+    display: flex;
+    display: -webkit-flex;
+
+    @if $flexflow { 
+        flex-flow: $flexflow; 
+        -webkit-flex-flow: $flexflow; 
+    }
+
+    @if $justifycontent { 
+        justify-content: $justifycontent;
+        -webkit-justify-content: $justifycontent;
+    }
+}
+
+@mixin alignSelf($alignself: false) {
+    @if $alignself {
+        align-self: $alignself;
+        -webkit-align-self: $alignself;
+    }
+}
+
+@mixin bgi($size, $position, $repeat) {
+    background: {
+        size: $size;
+        position: $position;
+        repeat: $repeat;
+    }
+}
+
+@mixin transform($x, $y) {
+    transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content };
+  &:-moz-placeholder           { @content };
+  &::-moz-placeholder          { @content };
+  &:-ms-input-placeholder      { @content };
+}
+
+@mixin box-shadow($horizontal, $vertical, $blur, $spread, $color, $opacity) {
+    -webkit-box-shadow: $horizontal $vertical $blur $spread rgba($color, $opacity);
+    -moz-box-shadow: $horizontal $vertical $blur $spread rgba($color, $opacity);
+    box-shadow: $horizontal $vertical $blur $spread rgba($color, $opacity);
+}
+
+@mixin text-shadow($horizontal, $vertical, $color, $opacity) {
+    -webkit-text-shadow: $horizontal $vertical rgba($color, $opacity);
+    -moz-text-shadow: $horizontal $vertical rgba($color, $opacity);
+    text-shadow: $horizontal $vertical rgba($color, $opacity);
+}
+
+// Font - styles 
+@mixin font-style($family, $size, $weight: false, $line-height: false) {
+    @if $family {
+        font-family: $family;
+    }
+
+    @if $size {
+        font-size: calculateRem($size);
+    }
+    
+    @if $line-height !=false {
+        line-height: calculateRem($line-height);
+    }
+    @if	$weight  !=false {
+        font-weight: $weight;
+    }
+}
+
+// Centering vertically and horizontally element
+@mixin centering() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+// Letter spacing and text indent
+@mixin tracking($number) {
+    letter-spacing: $number * 1em;
+    text-indent: $number * 1em;
+}
+
+// mixin for multiline
+@mixin multiLineEllipsis($lineHeight: false, $lineCount: false) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+
+    /* fallback */
+    @if $lineHeight {
+        line-height: $lineHeight;
+    }
+
+    /* fallback */
+    @if $lineCount {
+        max-height: $lineHeight * $lineCount;
+
+        /* number of lines to show */
+        -webkit-line-clamp: $lineCount;
+    }
+    
+    -webkit-box-orient: vertical;
+}
+
+@mixin transition($property: false, $time: false) {
+    @if $property and $time {
+        /* Safari */
+        -webkit-transition: $property $time;
+        transition: $property $time;
+    }
+}
+
+/* Rotate via transform */
+@mixin rotate3d($x, $y, $z, $angle) {
+    transform: rotate3d($x, $y, $z, $angle);
+    -webkit-transform: rotate3d($x, $y, $z, $angle);
+}
+
+// keyframes mixin
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content; 
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    
+    @keyframes #{$name} {
+        @content;
+    } 
+}
+
+@mixin call-animate($animation-name, $animation-iteration-count, $animation-timing-function, $animation-fill-mode, $animation-duration) {
+    animation-name: $animation-name;
+    animation-iteration-count: $animation-iteration-count;
+    animation-timing-function: $animation-timing-function;
+    animation-fill-mode: $animation-fill-mode;
+    animation-duration: $animation-duration;
+}

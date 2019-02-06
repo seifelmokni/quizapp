@@ -1,0 +1,27 @@
+<div class="base-component home">
+    <app-floating-bg [animated]="true" [image]="backgroundImageUrl"></app-floating-bg>
+    <app-head [goback]="false" [logoClasses]="logoClasses" [messages]="messages"></app-head>
+    
+    <div class="tagline">
+    <!--<ng-template instruction-host></ng-template>-->
+    
+    <div class="main-content">
+        <img class="tagline-image" src="assets/images/tagline.gif" width="375px" alt="quizvideo">
+    </div>
+    
+    <div class="link">
+        <a routerLink="/como-jugar" routerLinkActive="active">Cómo jugar</a>
+        <a routerLink="/help-video" routerLinkActive="active">Ver video</a>
+    </div>
+    
+    <a class="btn l yellow rounded full-width" routerLink="/register" routerLinkActive="active">Regístrate</a>
+    
+    <div class="legal">
+        <a class="btn l border solid white-border rounded bold register full-width" routerLink="/login" routerLinkActive="active">Inicia sesión</a>
+    </div>
+    </div>
+
+    <div class="legal">
+        <p class="normal">Utilizamos cookies propias y de terceros para mejorar tu experiencia. Puedes acceder a la <a routerLink="/politica-de-privacidad">política de privacidad</a>, las <a routerLink="/terminos-y-condiciones">condiciones de uso</a> y las <a routerLink="/reglas-oficiales">reglas oficiales</a>.</p>
+    </div>
+</div>

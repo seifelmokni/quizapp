@@ -1,0 +1,106 @@
+// Mobile first
+
+.btn {
+    @include font-style($dosis, false, 700, false);
+    @include box-shadow(0, 0, 30px, -7px, color(black), 0.75);
+    border-width: 1px;
+    border-color: transparent;    
+    color: color(white);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none !important;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.no-shadow {
+        box-shadow: none;
+    }
+
+    &.full-width {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &.rounded {
+        border-radius: 50px;
+    }
+
+    &.circle {
+        border-radius: 50%;
+    }
+    
+    &.white-txt {
+        color: color(white);
+    }
+
+    &.green-txt {
+        color: color(green);
+    }
+
+    &.yellow {
+        background-color: color(yellow);
+    }
+
+    &.cyan {
+        background-color: color(cyan);
+    }
+
+    &.white {
+        background-color: color(white);
+    }
+
+    &.darkgrey-txt {
+        color: color(darkgrey);
+    }
+
+    &.border {
+        &.solid {
+            border-style: solid;
+        }
+
+        &.green-border {
+            border-color: color(green);
+        }
+
+        &.white-border {
+            border-color: color(white);
+        }
+    }
+
+    &.xl {
+        @include font-style(false, 30px, false, 33px);
+        padding: 29px 75px;
+    }
+
+    &.l {
+        @include font-style(false, 21px, false, 27px);
+        padding: 17px 0;
+    }
+
+    &.m {
+        @include font-style(false, 18px, false, 21px);
+        padding: 12px 0;
+
+        &.circle {
+            line-height: 0;
+            height: 60px;
+            width: 60px;
+            position: relative;
+
+            span {
+                @include transform(-50%, -50%);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+        }
+    }
+
+    &.s {
+        @include font-style(false, 14px, false, 21px);
+        padding: 9px 0;
+    }
+}

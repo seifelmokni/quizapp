@@ -1,0 +1,36 @@
+<div [formGroup]="form">
+  <div class="error" *ngIf="form.get(field.key).invalid && (form.get(field.key).dirty || form.get(field.key).touched) && field.type !== 'checkbox'">
+    <div class="error-message" *ngIf="form.get(field.key).errors.required">
+      {{ field.placeholder }} is required.
+    </div>
+
+    <div class="error-message" *ngIf="form.get(field.key).errors.minlength">
+      {{ field.placeholder }} needs to be {{ form.get(field.key).errors.minlength.requiredLength }} characters minimum.
+    </div>
+
+    <div class="error-message" *ngIf="form.get(field.key).errors.pattern">
+      Please enter valid e-mail.
+    </div>
+  </div>
+
+  <label *ngIf="field.label" [attr.for]="field.key">{{ field.label }}</label>
+
+  <div [ngSwitch]="field.controlType">
+    <div class="input" *ngSwitchCase="'textbox'">
+      <input autocomplete="off" [id]="field.key" [formControlName]="field.key" [type]="field.type">
+      <span class="placeholder">{{ field.placeholder }}</span>
+      <p class="message small bold white" *ngIf="field.message">{{ field.message }}</p>
+    </div>
+    
+    <div class="input custom-checkbox" *ngSwitchCase="'checkbox'">
+      <input autocomplete="off" [id]="field.key" [formControlName]="field.key" type="checkbox">
+      <label class="small white" [attr.for]="field.key">{{ field.customContent }}</label>
+    </div>
+
+    <select [id]="field.key" *ngSwitchCase="'dropdown'" [formControlName]="field.key">
+      <option *ngFor="let opt of field.options" [value]="opt.key">{{ opt.value }}</option>
+    </select>
+  </div>
+
+  <!-- <div class="errorMessage" *ngIf="!isValid">{{ field.label }} is required</div> -->
+</div>

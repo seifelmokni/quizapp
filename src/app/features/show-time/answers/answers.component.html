@@ -1,0 +1,5 @@
+<div class="answers">
+  <div class="answer" (click)="onAnswer(answer.id)" [id]="'answer-' + answer.id" *ngFor="let answer of answers">
+    <div class="paragraph answer-text">{{ answer.text }}<span class="users-answers-count">0%</span></div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+@include keyframes(floating-bg) {
+    0% {
+        background-position-y: 100%
+    }
+
+    100% {
+        background-position-y: 0%;
+    }
+}
+
+/* Custom particles */
+
+.particle {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url("../assets/images/star.png");
+    -webkit-background-size: contain;
+            background-size: contain;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease; 
+}

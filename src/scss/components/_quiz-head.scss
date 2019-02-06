@@ -1,0 +1,66 @@
+// Mobile first
+.head.quiz-head {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  &.go-down {
+    top: 55px;
+    padding: 0 40px;
+  }
+
+  &.go-black {
+    .users .icon,
+    .users .icon i,
+    .lifes .icon,
+    .lifes .icon i,
+    .users .text,
+    .lifes .text {
+      color: color(textcolor) !important;
+    }
+  }
+
+  .logo {
+    max-width: 35px;
+  }
+
+  .flex-navigation { 
+    @include flexbox(row nowrap, space-between, flex-start);
+  }
+  
+  .flex-item {
+    @include flexbox(row nowrap, flex-start, flex-start);
+  }
+  
+  .users,
+  .lifes {
+    @include flexbox(row nowrap, flex-start, flex-start);
+  
+    .icon {
+      padding-right: 5px;
+      color: color(white);
+  
+      img {
+        margin-top: 7px;
+        display: block;
+      }
+    }
+  
+    .text {
+      @include font-style($dosis, 15px, 700, false);
+      color: color(white);
+    }
+  }
+  
+  .users {
+    padding-right: 15px;
+  }
+  
+  .heart {
+    display: block;
+    margin-top: 8.5px;
+  }
+}

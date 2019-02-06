@@ -1,0 +1,25 @@
+<div [ngClass]="headClasses" class="head quiz-head">
+  <div class="flex-navigation navigation">
+    <div *ngIf="usersCount" class="flex-item">
+      <div class="users">
+        <div class="icon">
+          <i class="fas fa-user-alt"></i>
+          <!-- <img src="assets/images/icons/human-white.png" alt="user"> -->
+        </div>
+        <p class="text">{{ usersCount }}</p>
+      </div>
+      <div class="lifes">
+        <div class="icon">
+          <i class="far fa-life-ring"></i>
+          <!-- <div class="heart xs white"></div> -->
+        </div>
+        
+        <p class="text">{{ extraLives }}</p>
+      </div>
+    </div>
+
+    <div class="flex-item">
+      <img class="logo" routerLink="/" [attr.src]="logo" alt="QuizVideo">
+    </div>
+  </div>
+</div>

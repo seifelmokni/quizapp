@@ -1,0 +1,20 @@
+// Mobile first
+.flash-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  .flash-message-item {
+    background-color:rgba(24,187,156,0.9);
+    @include box-shadow(0, 0, 30px, -7px, color(black), 0.75); 
+    padding: 20px;
+    color: #FFFFFF;
+    h5 {
+      font-size: medium;
+      text-align: center;
+      line-height: 1em;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div class="base-component no-padding-top no-padding-left-and-right help-video">
+  <app-floating-bg [animated]="true" [image]="backgroundImageUrl"></app-floating-bg>
+  <app-head [goback]="true" [titles]="titles"></app-head>
+  
+  <div *ngIf="videoUrl">
+    <app-stream-video
+      [startVideoFrom]="startVideoFrom"
+      [videoUrl]="videoUrl" 
+      [isLive]="false">
+    </app-stream-video>
+  </div>
+
+  <div class="bottom">
+    <a routerLink="/register" class="btn m yellow rounded white-txt bold">Entrar</a>
+    <p class="small white">Más información en nuestras <a class="underline" routerLink="/faq">FAQs</a></p>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div> 
+  <form
+    action=""
+    [formGroup]="form"
+    [ngClass]="formSettings.formClasses">
+    <div *ngFor="let field of formSettings.fields" class="from-row">
+      <app-dynamic-form-field [field]="field" [form]="form"></app-dynamic-form-field>
+    </div>
+
+    <div class="submit-field">
+      <button (click)="onSubmit()" class="btn yellow l rounded" type="submit">{{ formSettings.submitText }}</button>
+    </div>
+  </form>
+</div>
+
+<!-- (ngSubmit)="onSubmit()" -->

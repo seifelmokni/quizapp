@@ -1,0 +1,14 @@
+{
+  "name": "QuizVideo",
+  "short_name": "QuizVideo",
+  "theme_color": "#ec521e",
+  "background_color": "#ec521e",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/images/logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

@@ -1,0 +1,9 @@
+<ul class="social" *ngIf="socialMedia">
+  <li *ngFor="let social of socialMedia">
+    <a class="btn m circle cyan"  href="{{social.url}}">
+      <span>
+        <img class="{{ social.title }}" src="{{ social.img }}" alt="{{ social.title }}">
+      </span>
+    </a>
+  </li>
+</ul>

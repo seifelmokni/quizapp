@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		077E76DBB94D4FC896B6E73E /* NSBundle+CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BEA5C292A94B4A975A4C94 /* NSBundle+CULPlugin.m */; };
+		0EDDC6503FBD4265B2543548 /* CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AB5FB6DEF645D9B4B9B54E /* CULPlugin.m */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		265D16387203491D8B35FCE4 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD839D73514B45FFBF1D4B3D /* GTMSessionFetcher.framework */; };
+		2A0591CD01144F7E802547CF /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798B218808F2478B95110C05 /* FirebaseCore.framework */; };
+		2D91DE801A224BC2A9EC5A9A /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21EAA76C0DE4227AD36D001 /* FirebaseMessaging.framework */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		316724EC45E9452EA2D04BBF /* CULPath.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3F14610FDF427D9435D1EF /* CULPath.m */; };
+		3FAFB10D247A4519B7149DF9 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7E723057F4435808B8C11 /* CDVSplashScreen.m */; };
+		404CA12F5F214BFCAD487365 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AB9509D578443DAA107667 /* Protobuf.framework */; };
+		44868020AD294A088609BED2 /* FirebasePerformance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1D23FDADB542C6B5DFAD5D /* FirebasePerformance.framework */; };
+		4CEFA1A9BAB24EDBAFEF3EE2 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE91194A32C476190CA9783 /* FirebaseAuth.framework */; };
+		521109E397DF44838808C604 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D81AD71A778486B859E4A6D /* GoogleUtilities.framework */; };
+		5C7D2945788DCD67A2663666 /* libPods-Quizvideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054BC5822C36EB4D14BA9420 /* libPods-Quizvideo.a */; };
+		5E9463B0233F424AA1863C26 /* CDVPluginResult+CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A2E0F37F9B4927BE5F3CAD /* CDVPluginResult+CULPlugin.m */; };
+		6203B3EDB49B4A988AB7F05D /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F0E58FB0DE417DA5915F46 /* GoogleToolboxForMac.framework */; };
+		666067ED23904168AC442A9F /* CDVInvokedUrlCommand+CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = ED48E92DC15B414BA167EC6C /* CDVInvokedUrlCommand+CULPlugin.m */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		7024CFC7C34649D788BD6452 /* PortraitVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 929AC937A914444CA446D5A8 /* PortraitVideo.m */; };
+		726B86442C7F4038A1810C3C /* FirebasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6A3900F5E848F682232FF2 /* FirebasePlugin.m */; };
+		72E1CE30BC2546F6B9387C62 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE8630CBA840B3B80D2CCA /* CDVViewController+SplashScreen.m */; };
+		799A25B1F8CD4F9F9FBF88B1 /* AppDelegate+FirebasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A447BC7D66DC44D288DCADB4 /* AppDelegate+FirebasePlugin.m */; };
+		7E533D37C76A4279827B508D /* AppDelegate+CULPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F88CC40E5DB4D04A9FF6DAB /* AppDelegate+CULPlugin.m */; };
+		7ED5A50D9CCB45F999D6763D /* FirebaseABTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A533EFEE14C4CBEB88AA022 /* FirebaseABTesting.framework */; };
+		829CD5F2734B417CA96256FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DD450D2472841948EE61A5B /* GoogleService-Info.plist */; };
+		861FCBEDE64C4A9CBC3A4F4B /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4223844A73E643EEB308370C /* CDVDevice.m */; };
+		9206DC08B3B64CD2AF4AF91E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368E0CC7620D434CA3929469 /* MediaPlayer.framework */; };
+		92DF9B29077E4EDB967E3109 /* CULConfigXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CD28DD07C84934928EBF30 /* CULConfigXmlParser.m */; };
+		9DBA032207A54BA0AAF7AC00 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CAB3BCDB1394E1189DE502A /* SafariServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A38A39721CE847BD8AC59177 /* LandscapeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = F7751C7C7585444A8A5BF6C5 /* LandscapeVideo.m */; };
+		C1BE6A32C93545E3927027E8 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03275AC5F1CA43CDA988E81E /* Crashlytics.framework */; };
+		C320B34E60DD442AB50545AD /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6BA47BF2A049C191492687 /* FirebaseAnalytics.framework */; };
+		C5602A4AF2BE4097863FBC79 /* SafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62B0628B0EA45488340BDF6 /* SafariViewController.m */; };
+		CBD0EBAF5D8F414BA4330002 /* MeasurementNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183E1DEBCE6C456DB8767F65 /* MeasurementNanoPB.framework */; };
+		CFF0A8217AAA4598BCA2EFF7 /* CULXmlTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 1189EE285C6042D89281913A /* CULXmlTags.m */; };
+		D385F2B0BEB640ADA5D878D5 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A2B293F6524309A6C9C3A4 /* FirebaseCoreDiagnostics.framework */; };
+		DB5D3FAFDDCB4FACA07F6DEB /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE25DFE514B4D5A975C786B /* FirebaseRemoteConfig.framework */; };
+		E0D4EC4B91AE4E7C802E6CA7 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2311CDE9C3DD4A7C85A2A50B /* CDVInAppBrowser.m */; };
+		E692C290C3A34351AD3B03B3 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB1F0886ACD48F9A002297C /* nanopb.framework */; };
+		E7047BA7BCFA4F38BF750DD2 /* CULHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B517068289B489186753599 /* CULHost.m */; };
+		E860B512D99F4B839A360A3D /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFC7BA3CA354D4CBCFCCDCC /* FirebaseInstanceID.framework */; };
+		EA7A4C83CC874AC88B26D31E /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB9C527D86E46588D822C7D /* CDVStatusBar.m */; };
+		EF1A12D8BEA1441DAC0AE263 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941CC1A228994155862CC711 /* Fabric.framework */; };
+		F206582F2F294864B1744559 /* StreamingMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C70EF52B2F429AAEAB1F27 /* StreamingMedia.m */; };
+		F8EDBFFBE34944BC980A1B75 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB126BCCFFD44B2B7749673 /* GoogleAppMeasurement.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		44E5125D21C3A4A00021B95B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Quizvideo/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		03275AC5F1CA43CDA988E81E /* Crashlytics.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/Crashlytics.framework"; sourceTree = "<group>"; };
+		04246726F4754AA390FFCBC0 /* FirebasePlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePlugin.h; path = "cordova-plugin-firebase/FirebasePlugin.h"; sourceTree = "<group>"; };
+		04B7E723057F4435808B8C11 /* CDVSplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
+		054BC5822C36EB4D14BA9420 /* libPods-Quizvideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Quizvideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07619B002D55445EA313A2D4 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVInAppBrowser.h; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; };
+		0CAB3BCDB1394E1189DE502A /* SafariServices.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		0EB1F0886ACD48F9A002297C /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/nanopb.framework"; sourceTree = "<group>"; };
+		1189EE285C6042D89281913A /* CULXmlTags.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CULXmlTags.m; path = "cordova-universal-links-plugin/Parser/CULXmlTags.m"; sourceTree = "<group>"; };
+		141D3E7336A04E25ADF85551 /* LandscapeVideo.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LandscapeVideo.h; path = "cordova-plugin-streaming-media/LandscapeVideo.h"; sourceTree = "<group>"; };
+		1626C66BB26B49BD9DFE874D /* CULPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CULPlugin.h; path = "cordova-universal-links-plugin/CULPlugin.h"; sourceTree = "<group>"; };
+		183E1DEBCE6C456DB8767F65 /* MeasurementNanoPB.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = MeasurementNanoPB.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/MeasurementNanoPB.framework"; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Quizvideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizvideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D81AD71A778486B859E4A6D /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/GoogleUtilities.framework"; sourceTree = "<group>"; };
+		1DD450D2472841948EE61A5B /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1F88CC40E5DB4D04A9FF6DAB /* AppDelegate+CULPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+CULPlugin.m"; path = "cordova-universal-links-plugin/AppDelegate+CULPlugin.m"; sourceTree = "<group>"; };
+		20F0E58FB0DE417DA5915F46 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
+		21AB9509D578443DAA107667 /* Protobuf.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/Protobuf.framework"; sourceTree = "<group>"; };
+		230234337AA44CA2945A913A /* CULHost.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CULHost.h; path = "cordova-universal-links-plugin/Model/CULHost.h"; sourceTree = "<group>"; };
+		2311CDE9C3DD4A7C85A2A50B /* CDVInAppBrowser.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowser.m; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; };
+		2335FA13944647FA8F3BD739 /* PortraitVideo.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PortraitVideo.h; path = "cordova-plugin-streaming-media/PortraitVideo.h"; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B517068289B489186753599 /* CULHost.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CULHost.m; path = "cordova-universal-links-plugin/Model/CULHost.m"; sourceTree = "<group>"; };
+		2EE25DFE514B4D5A975C786B /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseRemoteConfig.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/FirebaseRemoteConfig.framework"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D362436694F0E8C09FF6A /* NSBundle+CULPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "NSBundle+CULPlugin.h"; path = "cordova-universal-links-plugin/Utils/NSBundle+CULPlugin.h"; sourceTree = "<group>"; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* Quizvideo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Quizvideo-Prefix.pch"; sourceTree = "<group>"; };
+		357575BF8B4A4424AA152101 /* SafariViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SafariViewController.h; path = "cordova-plugin-safariviewcontroller/SafariViewController.h"; sourceTree = "<group>"; };
+		368E0CC7620D434CA3929469 /* MediaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4223844A73E643EEB308370C /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
+		4A533EFEE14C4CBEB88AA022 /* FirebaseABTesting.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseABTesting.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/FirebaseABTesting.framework"; sourceTree = "<group>"; };
+		4C2D4D68A76C41318D40FFE3 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		4DE91194A32C476190CA9783 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/FirebaseAuth.framework"; sourceTree = "<group>"; };
+		54CD28DD07C84934928EBF30 /* CULConfigXmlParser.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CULConfigXmlParser.m; path = "cordova-universal-links-plugin/Parser/CULConfigXmlParser.m"; sourceTree = "<group>"; };
+		5CB9C527D86E46588D822C7D /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
+		5E6A3900F5E848F682232FF2 /* FirebasePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePlugin.m; path = "cordova-plugin-firebase/FirebasePlugin.m"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = Quizvideo/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		6C28613CD89047EA82C3EFF1 /* AppDelegate+FirebasePlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+FirebasePlugin.h"; path = "cordova-plugin-firebase/AppDelegate+FirebasePlugin.h"; sourceTree = "<group>"; };
+		70A2E0F37F9B4927BE5F3CAD /* CDVPluginResult+CULPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVPluginResult+CULPlugin.m"; path = "cordova-universal-links-plugin/JS/CDVPluginResult+CULPlugin.m"; sourceTree = "<group>"; };
+		761FCF386FF6471FA1ACDCAE /* StreamingMedia.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = StreamingMedia.h; path = "cordova-plugin-streaming-media/StreamingMedia.h"; sourceTree = "<group>"; };
+		77CE8630CBA840B3B80D2CCA /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
+		798B218808F2478B95110C05 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/FirebaseCore.framework"; sourceTree = "<group>"; };
+		7FC61CA36EB54A739CBEB2FE /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
+		87EB8CCF8D864B52B03D3882 /* CDVSplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Quizvideo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Quizvideo-Info.plist"; path = "Quizvideo/Quizvideo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		91BEA5C292A94B4A975A4C94 /* NSBundle+CULPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+CULPlugin.m"; path = "cordova-universal-links-plugin/Utils/NSBundle+CULPlugin.m"; sourceTree = "<group>"; };
+		929AC937A914444CA446D5A8 /* PortraitVideo.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = PortraitVideo.m; path = "cordova-plugin-streaming-media/PortraitVideo.m"; sourceTree = "<group>"; };
+		941CC1A228994155862CC711 /* Fabric.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/Fabric.framework"; sourceTree = "<group>"; };
+		9D29DF56B3494CA0A457E0D8 /* CULXmlTags.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CULXmlTags.h; path = "cordova-universal-links-plugin/Parser/CULXmlTags.h"; sourceTree = "<group>"; };
+		9E6BA47BF2A049C191492687 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/FirebaseAnalytics.framework"; sourceTree = "<group>"; };
+		A284B3F0763D47F58187EF0C /* CULConfigXmlParser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CULConfigXmlParser.h; path = "cordova-universal-links-plugin/Parser/CULConfigXmlParser.h"; sourceTree = "<group>"; };
+		A447BC7D66DC44D288DCADB4 /* AppDelegate+FirebasePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+FirebasePlugin.m"; path = "cordova-plugin-firebase/AppDelegate+FirebasePlugin.m"; sourceTree = "<group>"; };
+		A5B4A0455DAA462283C314B4 /* CDVInvokedUrlCommand+CULPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVInvokedUrlCommand+CULPlugin.h"; path = "cordova-universal-links-plugin/JS/CDVInvokedUrlCommand+CULPlugin.h"; sourceTree = "<group>"; };
+		A9C70EF52B2F429AAEAB1F27 /* StreamingMedia.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = StreamingMedia.m; path = "cordova-plugin-streaming-media/StreamingMedia.m"; sourceTree = "<group>"; };
+		AE3F14610FDF427D9435D1EF /* CULPath.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CULPath.m; path = "cordova-universal-links-plugin/Model/CULPath.m"; sourceTree = "<group>"; };
+		AEB126BCCFFD44B2B7749673 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
+		B99EC08956BC4B29849AF43D /* CDVPluginResult+CULPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVPluginResult+CULPlugin.h"; path = "cordova-universal-links-plugin/JS/CDVPluginResult+CULPlugin.h"; sourceTree = "<group>"; };
+		C925D7B8A2B5464F949E7DED /* Firebase.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = "cordova-plugin-firebase/Firebase.h"; sourceTree = "<group>"; };
+		D3A2B293F6524309A6C9C3A4 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/FirebaseCoreDiagnostics.framework"; sourceTree = "<group>"; };
+		DD839D73514B45FFBF1D4B3D /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
+		E18DD305229D4FFAA956539E /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		ED48E92DC15B414BA167EC6C /* CDVInvokedUrlCommand+CULPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVInvokedUrlCommand+CULPlugin.m"; path = "cordova-universal-links-plugin/JS/CDVInvokedUrlCommand+CULPlugin.m"; sourceTree = "<group>"; };
+		EEFC7BA3CA354D4CBCFCCDCC /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/FirebaseInstanceID.framework"; sourceTree = "<group>"; };
+		F21EAA76C0DE4227AD36D001 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/FirebaseMessaging.framework"; sourceTree = "<group>"; };
+		F2AB5FB6DEF645D9B4B9B54E /* CULPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CULPlugin.m; path = "cordova-universal-links-plugin/CULPlugin.m"; sourceTree = "<group>"; };
+		F62B0628B0EA45488340BDF6 /* SafariViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SafariViewController.m; path = "cordova-plugin-safariviewcontroller/SafariViewController.m"; sourceTree = "<group>"; };
+		F7751C7C7585444A8A5BF6C5 /* LandscapeVideo.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = LandscapeVideo.m; path = "cordova-plugin-streaming-media/LandscapeVideo.m"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Quizvideo/config.xml; sourceTree = "<group>"; };
+		FA1D23FDADB542C6B5DFAD5D /* FirebasePerformance.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebasePerformance.framework; path = "Quizvideo/Plugins/cordova-plugin-firebase/FirebasePerformance.framework"; sourceTree = "<group>"; };
+		FB7B38B51C5D43A48505F9AB /* AppDelegate+CULPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+CULPlugin.h"; path = "cordova-universal-links-plugin/AppDelegate+CULPlugin.h"; sourceTree = "<group>"; };
+		FDF099A40065434AAA7F9FE1 /* CULPath.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CULPath.h; path = "cordova-universal-links-plugin/Model/CULPath.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				9DBA032207A54BA0AAF7AC00 /* SafariServices.framework in Frameworks */,
+				9206DC08B3B64CD2AF4AF91E /* MediaPlayer.framework in Frameworks */,
+				C1BE6A32C93545E3927027E8 /* Crashlytics.framework in Frameworks */,
+				EF1A12D8BEA1441DAC0AE263 /* Fabric.framework in Frameworks */,
+				F8EDBFFBE34944BC980A1B75 /* GoogleAppMeasurement.framework in Frameworks */,
+				CBD0EBAF5D8F414BA4330002 /* MeasurementNanoPB.framework in Frameworks */,
+				2A0591CD01144F7E802547CF /* FirebaseCore.framework in Frameworks */,
+				C320B34E60DD442AB50545AD /* FirebaseAnalytics.framework in Frameworks */,
+				521109E397DF44838808C604 /* GoogleUtilities.framework in Frameworks */,
+				E692C290C3A34351AD3B03B3 /* nanopb.framework in Frameworks */,
+				E860B512D99F4B839A360A3D /* FirebaseInstanceID.framework in Frameworks */,
+				D385F2B0BEB640ADA5D878D5 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				265D16387203491D8B35FCE4 /* GTMSessionFetcher.framework in Frameworks */,
+				4CEFA1A9BAB24EDBAFEF3EE2 /* FirebaseAuth.framework in Frameworks */,
+				2D91DE801A224BC2A9EC5A9A /* FirebaseMessaging.framework in Frameworks */,
+				6203B3EDB49B4A988AB7F05D /* GoogleToolboxForMac.framework in Frameworks */,
+				44868020AD294A088609BED2 /* FirebasePerformance.framework in Frameworks */,
+				404CA12F5F214BFCAD487365 /* Protobuf.framework in Frameworks */,
+				DB5D3FAFDDCB4FACA07F6DEB /* FirebaseRemoteConfig.framework in Frameworks */,
+				7ED5A50D9CCB45F999D6763D /* FirebaseABTesting.framework in Frameworks */,
+				5C7D2945788DCD67A2663666 /* libPods-Quizvideo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = Quizvideo/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Quizvideo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				F151D5247C2E514BDB798E52 /* Pods */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Quizvideo-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = Quizvideo;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* Quizvideo-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				1DD450D2472841948EE61A5B /* GoogleService-Info.plist */,
+			);
+			name = Resources;
+			path = Quizvideo/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CAB3BCDB1394E1189DE502A /* SafariServices.framework */,
+				368E0CC7620D434CA3929469 /* MediaPlayer.framework */,
+				03275AC5F1CA43CDA988E81E /* Crashlytics.framework */,
+				941CC1A228994155862CC711 /* Fabric.framework */,
+				AEB126BCCFFD44B2B7749673 /* GoogleAppMeasurement.framework */,
+				183E1DEBCE6C456DB8767F65 /* MeasurementNanoPB.framework */,
+				798B218808F2478B95110C05 /* FirebaseCore.framework */,
+				9E6BA47BF2A049C191492687 /* FirebaseAnalytics.framework */,
+				1D81AD71A778486B859E4A6D /* GoogleUtilities.framework */,
+				0EB1F0886ACD48F9A002297C /* nanopb.framework */,
+				EEFC7BA3CA354D4CBCFCCDCC /* FirebaseInstanceID.framework */,
+				D3A2B293F6524309A6C9C3A4 /* FirebaseCoreDiagnostics.framework */,
+				DD839D73514B45FFBF1D4B3D /* GTMSessionFetcher.framework */,
+				4DE91194A32C476190CA9783 /* FirebaseAuth.framework */,
+				F21EAA76C0DE4227AD36D001 /* FirebaseMessaging.framework */,
+				20F0E58FB0DE417DA5915F46 /* GoogleToolboxForMac.framework */,
+				FA1D23FDADB542C6B5DFAD5D /* FirebasePerformance.framework */,
+				21AB9509D578443DAA107667 /* Protobuf.framework */,
+				2EE25DFE514B4D5A975C786B /* FirebaseRemoteConfig.framework */,
+				4A533EFEE14C4CBEB88AA022 /* FirebaseABTesting.framework */,
+				054BC5822C36EB4D14BA9420 /* libPods-Quizvideo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				44E5125E21C3A4A00021B95B /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				4223844A73E643EEB308370C /* CDVDevice.m */,
+				4C2D4D68A76C41318D40FFE3 /* CDVDevice.h */,
+				F62B0628B0EA45488340BDF6 /* SafariViewController.m */,
+				357575BF8B4A4424AA152101 /* SafariViewController.h */,
+				04B7E723057F4435808B8C11 /* CDVSplashScreen.m */,
+				77CE8630CBA840B3B80D2CCA /* CDVViewController+SplashScreen.m */,
+				87EB8CCF8D864B52B03D3882 /* CDVSplashScreen.h */,
+				7FC61CA36EB54A739CBEB2FE /* CDVViewController+SplashScreen.h */,
+				5CB9C527D86E46588D822C7D /* CDVStatusBar.m */,
+				E18DD305229D4FFAA956539E /* CDVStatusBar.h */,
+				A9C70EF52B2F429AAEAB1F27 /* StreamingMedia.m */,
+				F7751C7C7585444A8A5BF6C5 /* LandscapeVideo.m */,
+				929AC937A914444CA446D5A8 /* PortraitVideo.m */,
+				761FCF386FF6471FA1ACDCAE /* StreamingMedia.h */,
+				141D3E7336A04E25ADF85551 /* LandscapeVideo.h */,
+				2335FA13944647FA8F3BD739 /* PortraitVideo.h */,
+				F2AB5FB6DEF645D9B4B9B54E /* CULPlugin.m */,
+				1F88CC40E5DB4D04A9FF6DAB /* AppDelegate+CULPlugin.m */,
+				70A2E0F37F9B4927BE5F3CAD /* CDVPluginResult+CULPlugin.m */,
+				ED48E92DC15B414BA167EC6C /* CDVInvokedUrlCommand+CULPlugin.m */,
+				2B517068289B489186753599 /* CULHost.m */,
+				AE3F14610FDF427D9435D1EF /* CULPath.m */,
+				1189EE285C6042D89281913A /* CULXmlTags.m */,
+				54CD28DD07C84934928EBF30 /* CULConfigXmlParser.m */,
+				91BEA5C292A94B4A975A4C94 /* NSBundle+CULPlugin.m */,
+				1626C66BB26B49BD9DFE874D /* CULPlugin.h */,
+				FB7B38B51C5D43A48505F9AB /* AppDelegate+CULPlugin.h */,
+				B99EC08956BC4B29849AF43D /* CDVPluginResult+CULPlugin.h */,
+				A5B4A0455DAA462283C314B4 /* CDVInvokedUrlCommand+CULPlugin.h */,
+				230234337AA44CA2945A913A /* CULHost.h */,
+				FDF099A40065434AAA7F9FE1 /* CULPath.h */,
+				9D29DF56B3494CA0A457E0D8 /* CULXmlTags.h */,
+				A284B3F0763D47F58187EF0C /* CULConfigXmlParser.h */,
+				302D362436694F0E8C09FF6A /* NSBundle+CULPlugin.h */,
+				A447BC7D66DC44D288DCADB4 /* AppDelegate+FirebasePlugin.m */,
+				5E6A3900F5E848F682232FF2 /* FirebasePlugin.m */,
+				6C28613CD89047EA82C3EFF1 /* AppDelegate+FirebasePlugin.h */,
+				04246726F4754AA390FFCBC0 /* FirebasePlugin.h */,
+				C925D7B8A2B5464F949E7DED /* Firebase.h */,
+				2311CDE9C3DD4A7C85A2A50B /* CDVInAppBrowser.m */,
+				07619B002D55445EA313A2D4 /* CDVInAppBrowser.h */,
+			);
+			name = Plugins;
+			path = Quizvideo/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+		F151D5247C2E514BDB798E52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Quizvideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Quizvideo" */;
+			buildPhases = (
+				586E9750744141F75E62E38F /* [CP] Check Pods Manifest.lock */,
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				508596F3EC1C4E9BB6640DBA /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = Quizvideo;
+			productName = Quizvideo;
+			productReference = 1D6058910D05DD3D006BFB54 /* Quizvideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = YPKBVW4G8U;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Quizvideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Quizvideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		44E5125E21C3A4A00021B95B /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = 44E5125D21C3A4A00021B95B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				829CD5F2734B417CA96256FE /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+		508596F3EC1C4E9BB6640DBA /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}\"/\"Quizvideo\"/Plugins/cordova-plugin-firebase/Fabric.framework/run";
+			showEnvVarsInLog = 0;
+		};
+		586E9750744141F75E62E38F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quizvideo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				861FCBEDE64C4A9CBC3A4F4B /* CDVDevice.m in Sources */,
+				C5602A4AF2BE4097863FBC79 /* SafariViewController.m in Sources */,
+				3FAFB10D247A4519B7149DF9 /* CDVSplashScreen.m in Sources */,
+				72E1CE30BC2546F6B9387C62 /* CDVViewController+SplashScreen.m in Sources */,
+				EA7A4C83CC874AC88B26D31E /* CDVStatusBar.m in Sources */,
+				F206582F2F294864B1744559 /* StreamingMedia.m in Sources */,
+				A38A39721CE847BD8AC59177 /* LandscapeVideo.m in Sources */,
+				7024CFC7C34649D788BD6452 /* PortraitVideo.m in Sources */,
+				0EDDC6503FBD4265B2543548 /* CULPlugin.m in Sources */,
+				7E533D37C76A4279827B508D /* AppDelegate+CULPlugin.m in Sources */,
+				5E9463B0233F424AA1863C26 /* CDVPluginResult+CULPlugin.m in Sources */,
+				666067ED23904168AC442A9F /* CDVInvokedUrlCommand+CULPlugin.m in Sources */,
+				E7047BA7BCFA4F38BF750DD2 /* CULHost.m in Sources */,
+				316724EC45E9452EA2D04BBF /* CULPath.m in Sources */,
+				CFF0A8217AAA4598BCA2EFF7 /* CULXmlTags.m in Sources */,
+				92DF9B29077E4EDB967E3109 /* CULConfigXmlParser.m in Sources */,
+				077E76DBB94D4FC896B6E73E /* NSBundle+CULPlugin.m in Sources */,
+				799A25B1F8CD4F9F9FBF88B1 /* AppDelegate+FirebasePlugin.m in Sources */,
+				726B86442C7F4038A1810C3C /* FirebasePlugin.m in Sources */,
+				E0D4EC4B91AE4E7C802E6CA7 /* CDVInAppBrowser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = YPKBVW4G8U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quizvideo/Quizvideo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Quizvideo/Quizvideo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_NAME = Quizvideo;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = YPKBVW4G8U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+					"\"Quizvideo/Plugins/cordova-plugin-firebase\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quizvideo/Quizvideo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Quizvideo/Quizvideo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_NAME = Quizvideo;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Quizvideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Quizvideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

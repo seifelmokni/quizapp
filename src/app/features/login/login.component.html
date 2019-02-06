@@ -1,0 +1,72 @@
+<div class="base-component login">
+  <app-floating-bg [animated]="true" [image]="backgroundImage"></app-floating-bg>
+  <app-head [goback]="true" [titles]="titles" [subtitles]="subtitles"></app-head>
+    
+  <form action="" class="form login" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="from-row">
+      <div class="error" *ngIf="loginForm.get('email').invalid && (loginForm.get('email').dirty || loginForm.get('email').touched)">
+        <div class="error-message" *ngIf="loginForm.get('email').errors.required">
+          Campo requerido.
+        </div>
+
+        <div class="error-message" *ngIf="loginForm.get('email').errors.minlength">
+          El Email necesita al menos {{ loginForm.get('email').errors.minlength.requiredLength }} caracteres.
+        </div>
+
+        <div class="error-message" *ngIf="loginForm.get('email').errors.pattern">
+          El email no es válido.
+        </div>
+      </div>
+
+      <div class="input">
+        <input required id="email" name="email" type="email" [(ngModel)]="user.email" formControlName="email">
+        <span class="placeholder">Email</span>
+      </div>
+    </div>
+
+    <div class="from-row">
+      <div class="error" *ngIf="loginForm.get('password').invalid && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+        <div class="error-message" *ngIf="loginForm.get('password').errors.required">
+          Campo requerido.
+        </div>
+
+        <div class="error-message" *ngIf="loginForm.get('password').errors.minlength">
+          La contraseña necesita al menos {{ loginForm.get('password').errors.minlength.requiredLength }} caracteres.
+        </div>
+
+        <div class="error-message" *ngIf="loginForm.get('password').errors.pattern">
+          Por favor use una contraseña válidad.
+        </div>
+      </div>
+
+      <div class="input">
+        <input required id="password" name="password" type="password" [(ngModel)]="user.password" formControlName="password">
+        <span class="placeholder">Contraseña</span>
+      </div>
+    </div>
+
+    <div class="submit-field">
+      <button class="btn yellow l rounded" [attr.disable]="loginForm.invalid" type="submit">Entrar</button>
+    </div>
+  </form>
+
+  <div class="text-link centered">
+    <p class="small underline white" routerLink="/login/forgotten-password">¿Olvidaste tus datos de acceso?</p>
+  </div>
+
+  <div class="socials">
+      <app-socials [socialMedia]="socials"></app-socials>
+      <!--<div class="asking center">
+        <p class="small white">¿No tienes cuenta en Facebook o Twitter?</p>
+        <p class="small white">Regístrate con tu mail.</p>
+      </div>-->
+    </div>
+  
+  <div class="text centered">
+    <p class="white">¿No tienes cuenta en quizvideo?</p>
+    <a class="btn l border solid white-border rounded bold register" routerLink="/register">Regístrate</a>
+  </div>
+  <div class="legal">
+    <p class="normal">Utilizamos cookies propias y de terceros para mejorar tu experiencia. Puedes acceder a la <a routerLink="/politica-de-privacidad">política de privacidad</a>, las <a routerLink="/terminos-y-condiciones">condiciones de uso</a> y las <a routerLink="/reglas-oficiales">reglas oficiales</a>.</p>
+  </div>
+</div>

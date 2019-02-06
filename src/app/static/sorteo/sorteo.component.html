@@ -1,0 +1,29 @@
+<div class="base-component home">
+    <app-floating-bg [animated]="true" [image]="backgroundImageUrl"></app-floating-bg>
+    <div class="head">
+        <div class="navigation">
+          <div class="item go-back-item"></div>
+          <div class="item logo logo-big logo-white">
+            <img alt="quizvideo" src="assets/images/logo/qv-medium-blue.png">
+          </div>
+        </div>
+  
+        <div class="message">
+          <p class="h5 white medium">Gana un iPhone X / Cuanto más juegues más oportunidades de ganar.</p>
+        </div>
+      </div>
+    <div class="tagline">
+      <div class="main-content">
+          <img class="iphone-image" src="assets/images/iphone.gif" width="375px" alt="quizvideo">
+      </div>
+      <div class="link">
+          <a routerLink="/como-jugar" routerLinkActive="active">Cómo jugar</a>
+          <a routerLink="/help-video" routerLinkActive="active">Ver video</a>
+          <a routerLink="/bases-sorteo" routerLinkActive="active">Bases del sorteo</a>
+      </div>
+      <a id="sorteo" class="btn l yellow rounded full-width" routerLink="/register" routerLinkActive="active">Únete al sorteo</a>
+    </div>
+    <div class="legal">
+        <p class="normal">Utilizamos cookies propias y de terceros para mejorar tu experiencia. Puedes acceder a la <a routerLink="/politica-de-privacidad">política de privacidad</a>, las <a routerLink="/terminos-y-condiciones">condiciones de uso</a> y las <a routerLink="/reglas-oficiales">reglas oficiales</a>.</p>
+    </div>
+</div>

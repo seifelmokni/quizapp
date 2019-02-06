@@ -1,0 +1,25 @@
+<div class="head navbar">
+  <div class="navigation">
+    <div *ngIf="help" class="help">
+      <a class="goHelp" (click)="goHelp($event)">
+        <img class="btn circle" src="assets/images/help-icon.png" alt="help">
+      </a>
+    </div>
+
+    <div class="go-back-item" *ngIf="goback">
+      <a class="goBack" (click)="goBack($event)">
+        <img src="assets/images/arrow.png" alt="arrow">
+      </a>
+    </div>
+
+    <div *ngFor="let title of titles" class="item">
+      <h1 *ngIf="title.type === 'text'" [ngClass]="title.classes">{{ title.text }}</h1>
+      <div *ngIf="title.type === 'logo'" [ngClass]="title.classes"><img src="assets/images/logo/qv-medium-blue.png" alt="{{ title.text }}"></div>
+    </div>
+
+    <div *ngIf="logoClasses" class="logo" [ngClass]="logoClasses">
+      <img src="assets/images/logo/qv-medium-blue.png" alt="quizvideo">
+    </div>
+
+  </div>
+</div>

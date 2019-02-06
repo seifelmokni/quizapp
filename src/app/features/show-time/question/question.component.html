@@ -1,0 +1,25 @@
+<div *ngIf="showQuestion" class="question">
+  <div *ngIf="report" [ngClass]="areYouCorrect" class="question-report">
+    <div class="message h4 white">{{ result }}</div>
+  </div>
+
+  <div class="question-body">
+    <div *ngIf="countDown !== 0" class="h5 question-count-down">{{ countDown }}</div>
+
+    <div class="stars" *ngIf="stars.length > 0">
+      <div *ngFor="let star of stars" class="star">
+        <img src="{{ star }}" alt="Star">
+      </div>
+    </div>
+
+    <div class="h5 title">{{ question.title }}</div>
+
+    <!-- Answers -->
+    <app-answers (answerData)="handleAnswer($event)" [answers]="question.answers" [clicked]="answerSelected"></app-answers>
+  </div>
+
+  <div *ngIf="!report && !extraLifeUsed && extraLivesCount > 0 && !isLastQuestion" class="use-life">
+    <div class="small medium use-life-text">¿No la sabes?</div>
+    <div (click)="useExtraLife()" class="btn rounded cyan m white-txt">Usa un comodín</div>
+  </div>
+</div>

@@ -1,0 +1,111 @@
+<app-loader></app-loader>
+<div class="base-component register">
+	<app-floating-bg [animated]="true" [image]="backgroundImage"></app-floating-bg>
+	<app-head [goback]="true" [titles]="titles"></app-head>
+
+	<form action="" class="form register" [formGroup]="registerForm" (ngSubmit)="onFormData()">
+		<div class="from-row">
+			<div class="input custom-checkbox">
+				<input required autocomplete="off" type="checkbox" id="terms_and_conditions" formControlName="terms_and_conditions" class=""
+				 [(ngModel)]="user.terms_and_conditions">
+				<label class="small white" for="terms_and_conditions">Confirmo que tengo más de 16 años y que he leído y acepto los
+					<a class="inline small white underline" routerLink="/terminos-y-condiciones">términos y condiciones</a> de quizvideo.</label>
+			</div>
+		</div>
+
+		<div class="from-row last">
+			<div class="input custom-checkbox">
+				<input required autocomplete="off" type="checkbox" id="provide_email" class="" formControlName="provide_email" [(ngModel)]="user.provide_email">
+				<label class="small white" for="provide_email">Conforme a las leyes actuales de protección de datos, autorizo a quizvideo a almacenar mis datos de usuario y a contactarme al inicio del juego. <a class="inline small white underline" routerLink="/politica-de-privacidad">Más información</a>.</label>
+			</div>
+		</div>
+
+		<div class="checkbox-required" [ngClass]="registerForm.get('terms_and_conditions').valid && registerForm.get('provide_email').valid ? 'valid' : 'invalid'">
+			<div class="from-row">
+				<div class="socials">
+					<app-socials [socialMedia]="socials"></app-socials>
+
+					<div class="asking center">
+						<p class="small white">¿No tienes cuenta en Facebook o Twitter?</p>
+						<p class="small white">Regístrate con tu mail.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="from-row">
+				<div class="error" *ngIf="(registerForm.get('username').invalid) && (registerForm.get('username').dirty || registerForm.get('username').touched)">
+					<div class="error-message" *ngIf="registerForm.get('username').errors.required">
+						Campo requerido.
+					</div>
+
+					<div class="error-message" *ngIf="registerForm.get('username').errors.minlength">
+						El usuario necesita al menos {{ registerForm.get('username').errors.minlength.requiredLength }} caractéres.
+					</div>
+
+					<div class="error-message" *ngIf="registerForm.get('username').errors.pattern">
+						Por favor introduzca un nombre de usuario válido.
+					</div>
+				</div>
+
+				<div class="input">
+					<input required id="username" name="username" type="text" [(ngModel)]="user.username" formControlName="username">
+					<span class="placeholder">Nombre de usuario</span>
+				</div>
+			</div>
+
+			<div class="from-row">
+				<div class="error" *ngIf="registerForm.get('email').invalid && (registerForm.get('email').dirty || registerForm.get('email').touched)">
+					<div class="error-message" *ngIf="registerForm.get('email').errors.required">
+						Campo requerido.
+					</div>
+
+					<div class="error-message" *ngIf="registerForm.get('email').errors.minlength">
+						El email necesita al menos {{ registerForm.get('email').errors.minlength.requiredLength }} caracteres.
+					</div>
+
+					<div class="error-message" *ngIf="registerForm.get('email').errors.pattern">
+						Por favor introduzca un email válido.
+					</div>
+				</div>
+
+				<div class="input">
+					<input required id="email" name="email" type="email" [(ngModel)]="user.email" formControlName="email">
+					<span class="placeholder">Email</span>
+				</div>
+			</div>
+
+			<div class="from-row">
+				<div class="error" *ngIf="registerForm.get('password').invalid && (registerForm.get('password').dirty || registerForm.get('password').touched)">
+					<div class="error-message" *ngIf="registerForm.get('password').errors.required">
+						Campo requerido.
+					</div>
+
+					<div class="error-message" *ngIf="registerForm.get('password').errors.minlength">
+						La contraseña necesita al menos {{ registerForm.get('password').errors.minlength.requiredLength }} caracteres.
+					</div>
+
+					<div class="error-message" *ngIf="registerForm.get('password').errors.pattern">
+						Por favor introduzca una contraseña válida.
+					</div>
+				</div>
+
+				<div class="input">
+					<input required id="password" name="password" type="password" [(ngModel)]="user.password" formControlName="password">
+					<span class="placeholder">Contraseña</span>
+				</div>
+			</div>
+
+			<div class="submit-field">
+				<button class="btn yellow l rounded" [attr.disable]="!registerForm.valid" type="submit">Regístrate</button>
+			</div>
+		</div>
+	</form>
+
+	<div class="legal">
+		<a class="small">¿Ya tienes cuenta en quizvideo?</a>
+		<a class="btn l border solid white-border rounded bold register" routerLink="/login">Inicia sesión</a>
+	</div>
+	<div class="legal">
+		<p class="normal">Utilizamos cookies propias y de terceros para mejorar tu experiencia. Puedes acceder a la <a routerLink="/politica-de-privacidad">política de privacidad</a>, las <a routerLink="/terminos-y-condiciones">condiciones de uso</a> y las <a routerLink="/reglas-oficiales">reglas oficiales</a>.</p>
+	</div>
+</div>

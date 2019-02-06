@@ -1,0 +1,33 @@
+// Mobile first
+
+.profile-internal {
+  .head {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    .go-back-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  .top {
+    @include bgi(cover, top center, no-repeat);
+    padding: 120px 0 40px;
+    text-align: center;
+  }
+
+  .content {
+    padding: 30px 40px;
+    background: white;
+  }
+  .social {
+    background: white;
+    padding-bottom: 20px;
+  }
+}

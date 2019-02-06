@@ -1,0 +1,18 @@
+// Mobile first
+.logo {
+  &.logo-big {
+    max-width: 120px;
+  }
+
+  &.logo-medium {
+    max-width: 65px;
+  }
+
+  &.logo-small {
+    max-width: 38px;
+  }
+
+  &.logo-white {
+    filter: brightness(0) invert(1);
+  }
+}

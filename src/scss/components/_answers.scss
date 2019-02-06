@@ -1,0 +1,35 @@
+// Mobile first
+.answers {
+  padding: 20px 0;
+
+  .answer {
+    border: 1px solid color(grey);
+    border-radius: 25px;
+    padding: 20px 25px;
+    margin-bottom: 10px;
+
+    &.selected {
+      background: color(lightgrey);
+    }
+
+    &.correct {
+      border: 0;
+      background: color(lightgreen);
+    }
+
+    &.wrong {
+      border: 0;
+      background: color(coral);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .users-answers-count {
+    float: right;
+    font-weight: 1;
+    display: none;
+  }
+}

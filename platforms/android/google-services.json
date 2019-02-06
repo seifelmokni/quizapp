@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "325736013077",
+    "firebase_url": "https://quizvideo-c53fc.firebaseio.com",
+    "project_id": "quizvideo-c53fc",
+    "storage_bucket": "quizvideo-c53fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325736013077:android:720e02fb0932974d",
+        "android_client_info": {
+          "package_name": "com.quizvideo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325736013077-5reh8r8vqrm364n2n9h51era6qhlho2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf7StMoVS89jGCCIWdg5YS8Wzp53JdrCI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

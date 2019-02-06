@@ -1,0 +1,26 @@
+// SASS VARIABLES
+
+//Fonts
+$dosis: 'Dosis', sans-serif;
+
+// SASSS Maps.
+// Output with map-get($colors, ...). Check _functions.scss.
+// Usage: .foo { color: color(white); // #fff }
+$colors: (
+    black: #000,
+    lightgrey: #e6ecef,
+    grey: #778892,
+    darkgrey: #4a4a4a,
+    white: #ffffff,
+    red: #ec521d,
+    coral: #fd7d7d,
+    pink: #fcabab,
+    orange: #f08e01,
+    lightgreen: #4cd47c,
+    green: #157967,
+    blue: #244f7f,
+    yellow: #b6bc0a,
+    cyan: #0e92ae,
+    textcolor: #164256
+);
+

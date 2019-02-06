@@ -1,0 +1,46 @@
+// Mobile first
+.final-screen {
+  text-align:  center;
+
+  .head {
+    .goBack {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .star {
+    padding: 20px 0 15px;
+    .fa-star {
+      color: #FFFFFF;
+      font-size: 45px;
+    }
+  }
+
+  .score {
+    padding-bottom: 30px;
+  }
+
+  .isWinner-message {
+    padding-bottom: 10px;
+  }
+
+  .status {
+    padding-bottom: 30px;
+  }
+
+  .btn {
+    width: cp(295, 335);
+  }
+
+  .go-to-leaderboard {
+    .message {
+      padding-bottom: 15px;
+    }
+
+    .results {
+      padding-top: 20px;
+    }
+  }
+}

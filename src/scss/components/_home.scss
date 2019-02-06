@@ -1,0 +1,16 @@
+// Mobile first
+.base-component.home {
+    .device-info {
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+        font-size: x-small;
+    }
+    .head {
+      .navigation{
+        img {
+          max-width: 60px;
+        }
+      }  
+    }
+}

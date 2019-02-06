@@ -1,0 +1,36 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  overscroll-behavior: contain;
+  background: url("assets/images/backgrounds/1920-01.jpg") top left repeat-y;
+  background-size: cover;
+  min-height: 100%;
+  height: 100%;
+
+
+  // MSM 
+  position: absolute;
+   top: 1.25rem; // iOs 10 or lower
+   top: constant(safe-area-inset-top); // iOs 11
+   top: env(safe-area-inset-top); // iOs 11+ (feature)
+
+   // or use calc()
+   top: calc(constant(safe-area-inset-top) + 1rem);
+   top: env(constant(safe-area-inset-top) + 1rem);
+
+   // or SCSS calc()
+   $nav-height: rem;
+   top: calc(constant(safe-area-inset-top) + #{$nav-height});
+   top: calc(env(safe-area-inset-top) + #{$nav-height});
+   
+   bottom: calc(constant(safe-area-inset-bottom) + #{$nav-height});
+   bottom: calc(env(safe-area-inset-bottom) + #{$nav-height});
+   
+   right: calc(constant(safe-area-inset-right));
+   right: calc(env(safe-area-inset-right));
+   
+   left: calc(constant(safe-area-inset-left));
+   left: calc(env(safe-area-inset-left));
+}

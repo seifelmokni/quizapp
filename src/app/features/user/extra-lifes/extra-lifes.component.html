@@ -1,0 +1,54 @@
+<div class="base-component no-padding-top no-padding-left-and-right no-padding-bottom profile-internal extra-lifes">
+  <app-floating-bg [animated]="true" [image]="image"></app-floating-bg>
+  <app-head [goback]="true" [titles]="titles" [messages]="messages"></app-head>
+  <div class="top">
+    <div class="life-circle white big">
+      <div class="square top left"></div>
+      <div class="square top right"></div>
+      <div class="square bottom left"></div>
+      <div class="square bottom right"></div>
+      <div class="life-circle white small transparent">
+        <p class="value white">{{ extraLives }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <h5 class="medium center">Invita a tus amigos y, por cada uno que se registre y juegue, te regalamos un comodín.</h5>
+    <h5 class="medium center">Utiliza ese comodín para ganar 3 estrellas en la pregunta que elijas.</h5>
+    <h5 class="medium center">No hay límite de comodines, consigue tantos como quieras. Eso sí, sólo puedes usar uno por juego y no lo puedes gastar
+      en la pregunta 10.</h5>
+  </div>
+
+  <ul class="social">
+    <li>
+      <a class="btn m circle cyan facebook" onclick="cordova.InAppBrowser.open('https://www.facebook.com/sharer/sharer.php?u='+ url, '_system');return false;">
+        <span>
+          <img class="facebook" src="assets/images/social/fb_2.png" alt="Facebook">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a class="btn m circle cyan twitter" onclick="cordova.InAppBrowser.open('https://twitter.com/intent/tweet?text=Te invito a participar en quizvideo, donde puedes poner a prueba tus conocimientos y ganar dinero &url=' + url + '&via=quizvideotrivia&hashtags=quizvideo', '_system');return false;">
+        <span>
+          <img class="twitter" src="assets/images/social/tw_2.png" alt="Twitter">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a class="btn m circle cyan mail" onclick="cordova.InAppBrowser.open('https://api.whatsapp.com/send?text=Te invito a participar en quizvideo, donde puedes poner a prueba tus conocimientos y ganar dinero ' + url, '_system');return false;" data-action="share/whatsapp/share">
+        <span>
+          <img class="mail" src="assets/images/social/mail.png" alt="Whatsapp">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a data-clipboard-target="#clipboard" class="btn m circle cyan clipboard" (click)="copied()">
+        <input style="z-index: -1; position: absolute; font-size: 1px;" id="clipboard" name="clipboard" [attr.value]="'Enlace copiado al portapapeles. ¡Ahora compártelo! ' + url">
+        <span>
+          <img class="linkedin" src="assets/images/social/linkedin.png" alt="linkedin">
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>

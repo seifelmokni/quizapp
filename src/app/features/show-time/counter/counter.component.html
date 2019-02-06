@@ -1,0 +1,8 @@
+<div class="counter" *ngIf="time">
+  <h4 class="text white">Comenzamos en:</h4>
+  <div class="time">{{ time }}</div>
+  <div class="users-online" *ngIf="usersCount">
+    <div class="h3 white number">{{ usersCount }}</div>
+    <div class="h5 white number">usuarios online</div>
+  </div>
+</div>

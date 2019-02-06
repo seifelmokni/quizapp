@@ -1,0 +1,101 @@
+// Mobile first
+.heart {
+  background-color: color(grey);
+  display: inline-block;
+  margin-top: 20px;
+  height: 30px;
+  position: relative;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 30px;
+
+  &.white {
+    background-color: color(white);
+
+    &:before,
+    &:after {
+      background-color: color(white);
+    }
+  }
+
+  &.m {
+    height: 40px;
+    width: 40px;
+
+    &:before,
+    &:after {
+      height: 40px;
+      width: 40px;
+    }
+
+    &:before {
+      top: -20px;
+      left: 0;
+    }
+    
+    &:after {
+      left: 20px;
+      top: 0;
+    }
+
+    .count {
+      top: 0px;
+      left: 19px;
+    }
+  }
+
+  &.xs {
+    height: 5px;
+    width: 5px;
+
+    &:before,
+    &:after {
+      height: 5px;
+      width: 5px;
+    }
+
+    &:before {
+      top: -3.5px;
+      left: 0;
+    }
+    
+    &:after {
+      left: 2.5px;
+      top: 0;
+    }
+
+    .count {
+      top: 0px;
+      left: 2.5px;
+    }
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    background-color: color(grey);
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+
+  &:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  &:after {
+    left: 15px;
+    top: 0;
+  }
+
+  .count {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 13px;
+    z-index: 1;
+  }
+}

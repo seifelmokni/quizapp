@@ -1,0 +1,8 @@
+// Mobile first
+.stream-video {
+  video {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+  }
+}

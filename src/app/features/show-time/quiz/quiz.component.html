@@ -1,0 +1,33 @@
+<app-loader></app-loader>
+<div class="base-component quiz">
+  <app-floating-bg [animated]="false" [image]="backgroundImageUrl"></app-floating-bg>
+  <app-quiz-head></app-quiz-head>
+
+  <div *ngIf="play">
+    <app-stream-video
+      [startVideoFrom]="startVideoFrom"
+      [videoUrl]="videoUrl"
+      [isLive]="true">
+    </app-stream-video>
+  </div>
+
+  <a id="join-button-top" *ngIf="showButton && showCounter" (click)="joinNow()" class="btn cyan l rounded">PULSA Y JUEGA</a>
+
+  <div *ngIf="showCounter; else counterOver">
+    <app-counter [time]="time" [usersCount]="population"></app-counter>
+  </div>
+  
+  <div style=" color: white;text-align: center;">(Apple no participa de ninguna manera en el concurso)</div>
+  <ng-template #counterOver>
+      <div *ngIf="!play">
+        <p class="counter h4 white">¡Ya estamos listos!</p>
+        <a id="join-button-gamestarted" (click)="joinNow()" class="btn cyan l rounded">PULSA Y JUEGA</a>
+      </div>
+  </ng-template>
+
+  <a id="join-button-bottom" *ngIf="showButton && showCounter" (click)="joinNow()" class="btn cyan l rounded">PULSA Y JUEGA</a>
+
+  <div *ngIf="question">
+    <app-question [question]="question"></app-question>
+  </div>
+</div>

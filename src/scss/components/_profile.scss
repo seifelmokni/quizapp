@@ -1,0 +1,20 @@
+// Mobile first
+.base-component.profile {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0px;
+    
+    .head {
+        padding: 20px 20px;
+    }
+
+    .reminder {
+        padding-top: 15px;
+        text-align: center;
+        
+        .btn {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+}

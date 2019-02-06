@@ -1,0 +1,42 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.quizvideo.app"
+    },
+    "cordova-plugin-firebase": {
+      "PACKAGE_NAME": "com.quizvideo.app"
+    },
+    "cordova-plugin-safariviewcontroller": {
+      "PACKAGE_NAME": "com.quizvideo.app"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.quizvideo.app"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.quizvideo.app"
+    },
+    "cordova-plugin-streaming-media": {
+      "PACKAGE_NAME": "com.quizvideo.app"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.quizvideo.app"
+    },
+    "cordova-universal-links-plugin": {
+      "PACKAGE_NAME": "com.quizvideo.app"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.quizvideo.app"
+    },
+    "cordova-plugin-preventsleep": {
+      "PACKAGE_NAME": "com.quizvideo.app"
+    }
+  },
+  "dependent_plugins": {}
+}

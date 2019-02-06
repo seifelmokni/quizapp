@@ -1,0 +1,74 @@
+<div class="base-component game-results">
+	<!--<app-floating-bg [animated]="true" [image]="image"></app-floating-bg>-->
+	<app-head
+		[help]="true"
+		[goback]="true" 
+		[titles]="titles" 
+		[subtitles]="subtitles"
+		[messages]="messages">
+	</app-head>
+	
+	<div *ngIf="slides.length && quiz.prizeAmount > 0">
+		<ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+			<div ngxSlickItem *ngFor="let slide of slides" class="slide">
+				<img src="{{ slide.image ? slide.image : 'assets/images/icons/user-placeholder-1.png' }}" alt="{{ slide.username }}" width="100%">
+				<p class="normal white small">{{ slide.username | split:'@' }}</p>
+				<p class="white">{{ slide.money_earned | number : '1.2' }} €</p>
+			</div>
+		</ngx-slick>
+	</div>
+	
+	<div *ngIf="showUserProfile">
+		<div class="user-results">
+			<div class="table">
+				<a href="/game-results#{{ user.id }}">
+					<div class="table-cell score">
+					<p class="flex-item-title small grey"></p>
+					<i class="fas fa-star"></i>
+					<h5 class="count-of-stars">{{ user.score }}</h5>
+					</div>
+
+					<div class="table-cell profile">
+					<p>TU RESULTADO</p>
+					<div class="profile-image" [ngStyle]="image">
+						<img src="{{ user.image ? user.image : 'assets/images/icons/user-placeholder-1.png' }}" alt="{{ user.username }}">
+					</div>
+					<div class="profile-name">
+						<h5 class="normal">{{ user.username | split:'@' }}</h5>
+					</div>
+					</div>
+
+					
+					<div *ngIf="quiz.prizeAmount > 0" class="table-cell earned" routerLink="/profile/balance">
+					<p class="flex-item-title small medium grey">Has ganado</p>
+					<h3 class="value">{{ user.balance | number : '1.2' }}€</h3>
+					</div>
+					<div *ngIf="quiz.prizeAmount == 0" class="table-cell earned">
+					<p>Descubre a los ganadores en nuestras redes sociales</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<h5 *ngIf="!slides" class="center padding bg-white">!Prepárate para el próximo quiz!</h5>
+		
+	<div *ngIf="slides" class="winner-list">
+		<h4 class="center">Resultados del quiz</h4>
+		<div class="table">
+			<div  *ngFor="let winner of winners" class="table-row" id="{{ winner.user_id }}">
+					<div class="table-cell table-pos gray">{{ winner.position }}</div>
+					<div class="table-cell table-image"><img src="{{ winner.image ? winner.image : 'assets/images/icons/user-placeholder-1.png' }}" alt="" width="100%"></div>
+					<div class="table-cell table-name" *ngIf="this.user.id ===  winner.user_id"><strong>{{ winner.username | split:'@' }}</strong></div>
+					<div class="table-cell table-name" *ngIf="this.user.id !=  winner.user_id">{{ winner.username | split:'@' }}</div>
+					<div class="table-cell table-score">{{ winner.score_earned }} x</div>
+					<div class="table-cell table-star"><i class="fas fa-star"></i></div>
+			</div>
+		</div>
+		<div class="show-of-or-invite">
+			<a routerLink="/invite" class="btn cyan l white-txt">
+			Invita a tus amigos
+			</a>
+		</div>
+
+	</div>
+</div>

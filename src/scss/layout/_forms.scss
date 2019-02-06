@@ -1,0 +1,156 @@
+//Mobile first
+
+.form {
+    padding: 0 20px;
+    
+    .message {
+        display: block;
+        text-align: center;
+        margin: 20px auto 40px;
+        padding: 0;
+        max-width: 150px;
+    }
+
+    .input {
+        position: relative;
+    }
+
+    .placeholder {
+        @include font-style($dosis, 21px, 500, 27px);
+        @include transform(-50%, 0);
+        color: color(white);
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transition: 0.75s;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .error {
+        position: absolute;
+        top: 3px;
+        left: 7px;
+        z-index: 1;
+    }
+
+    .error-message {
+        @include font-style($dosis, 12px, 500);
+        color: #da0f0f;
+    }
+
+    .from-row {
+        // padding-bottom: 20px;
+        position: relative;
+
+        &:nth-child(5) {
+            // padding-top: 30px;
+        }
+
+        &:nth-last-child(2) {
+            padding-bottom: 30px;
+        }
+
+        &:last-child,
+        &.last {
+            padding-bottom: 0;
+        }
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .custom-checkbox {
+        padding-bottom: 20px;
+
+        input[type="checkbox"]:not(:checked),
+        input[type="checkbox"]:checked {
+            position: absolute;
+            visibility: hidden;
+            left: -9999px;
+        }
+
+        input[type="checkbox"]:not(:checked) + label,
+        input[type="checkbox"]:checked + label {
+            position: relative;
+            padding-left: 1.95em;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:not(:checked) + label:after,
+        input[type="checkbox"]:checked + label:after {
+            background: color(white);
+            content: ' ';
+            color: color(textcolor);
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 20px;
+            width: 20px;
+        }
+
+        input[type="checkbox"]:not(:checked) + label:after {
+            content: '';
+        }
+
+        input[type="checkbox"]:checked + label:after {
+            content: '\2713 ';
+            opacity: 1;
+        }
+
+        input[type="checkbox"].ng-touched.ng-invalid:not(:checked) + label:after {
+            background: color(pink)
+        }
+    }
+
+    input {
+        @include font-style($dosis, 21px, 500, 21px);
+        @include placeholder {
+            color: color(white);
+        }
+        border-bottom: 1px solid color(white);
+        color: color(white);
+        display: block;
+        width: 100%;
+
+        &[type="text"],
+        &[type="email"],
+        &[type="password"], {
+            padding: 25px 10px 10px;
+        }
+
+        &[type="text"],
+        &[type="email"],
+        &[type="password"] {
+            text-align: center;
+        }
+
+        &:focus + .placeholder,
+        &.ng-touched.ng-valid + .placeholder,
+        &.ng-touched.ng-invalid + .placeholder {
+            font-size: calculateRem(12px);
+            transition: 0.75s;
+            top: 10px;
+        }
+
+        &.ng-invalid.ng-touched,
+        &.ng-invalid.ng-dirty, {
+            background: color(pink);
+        }
+
+        &.ng-untouched + .placeholder{
+            z-index: -1;
+        }
+    }
+}
+
+// 568+
+@media only screen and (min-width: 568 / 16 * 1em) {}
+
+// 768+
+@media only screen and (min-width: 768 / 16 * 1em) {}
+
+// 1024+
+@media only screen and (min-width: 1024 / 16 * 1em) {}

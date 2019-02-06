@@ -1,0 +1,46 @@
+// Mobile first
+.form.login {
+  .message {
+    max-width: none;
+  }
+}
+
+.base-component.login {
+  padding: 20px 0px;
+  .head {
+    .h3 {
+       font-size: 1.5rem;
+     }
+     padding-bottom: 10px;
+  }
+  .text-link {
+    margin: 20px 0 30px 0;
+  }
+  .text {
+    margin: 20px 0 20px 0;
+  }
+  .social {
+		@include flexbox(row nowrap, space-between, center);
+		padding: 0px;
+		max-width: 140px;
+		margin: 0 auto;
+		list-style: none;
+
+		img {
+				&.Facebook {
+					max-width: 13px;
+				}
+
+				&.Twitter,
+				&.Instagram {
+					max-width: 22px;
+				}
+		}
+  }
+  
+  .btn.register {
+    display: block;
+    margin: 30px auto 0;
+    width: cp(295, 335);
+  }
+}
